@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+
+  /* first nav bar   */
+  main{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  /* global color*/
+  .primary-btn{
+    background-color: rgb(255, 144, 14);
+    color: white;
+    font-size: 1.25rem;
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* dark-1 */
+  .color-g1{
+    color: rgb(114, 114, 114);
+  }
+   /* dark-2 */
+  .color-g2{
+    color: rgb(66, 66, 66)
+  }
+   /* dark-3 */
+  .color-g3{
+    color: rgb(19, 19, 19);
+  }
+  
+  /* global bg-color  */
+  /* this is orange */
+  .bg-color-all{
+    background-color: rgba(255, 144, 14, 0.1);
+  }
+
+/* let's style */
+/* nav bar */
+  .nav-h2{
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .link-h2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+  .link-column{
+    display: flex;
+    list-style: none;
+  }
+  .link a{
+    text-decoration: none;
+    margin-right: 30px;
+  }
+  .hacl{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  /* banner css style */
+  .banner{
+  }
+  .banner-content{
+    max-width: 862px;
+    text-align: center;
+    margin: 0 auto;
+    
+  }
+  .banner-h1{
+    font-size: 4rem;
+    font-weight: 700px;
+    margin-bottom: 30px;
+  }
+  .banner-p{
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .banner-img{
+    width: 100%;
+    margin: 50px 0 45px 0;
+  }
+
+  /* team part */
+
+  .team-h2{
+    color: rgb(255, 144, 14);
+    margin-bottom: 24px;
+    font-size: 3rem;
+  }
+  .team-p{
+    margin-bottom: 32px;
+  }
+  .cliant-team{
+    display: flex;
+    align-items: center;
+    gap: 73px;
+    justify-content: center;
+    margin: 130px 61px;
+
+  }
+  .team-left{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .left-img{
+    border-radius: 8px;
+  }
+  .team-left img{
+    /* width: 100%; */
+  }
+
+
+
+  /* small device media quary */
+  @media screen and (max-width: 576px) {
+    
+      .link-h2{
+          flex-direction: column-reverse;
+        }
+        .cliant-team{
+            flex-direction: column;
+        }
+        .team-left{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        
+    }
+
+
+
+    /* mediam device */
+
+    @media screen and (min-width:576px) and (max-width:992px) {
+        .cliant-team{
+            flex-direction: column;
+        }
+        .team-left img{
+            width: 100%;
+        }
+    }
+  
